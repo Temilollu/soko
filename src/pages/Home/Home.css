@@ -1,0 +1,26 @@
+.home-container {
+  display: grid;
+  padding: 0rem 8rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  min-height: 60vh;
+  border-top: 1px solid grey;
+}
+.sidebar {
+  border-right: 1px solid grey;
+  padding-top: 2rem;
+}
+.sidebar > * {
+  padding: 0.3rem;
+  color: grey;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+.sidebar .active {
+  background-color: rgba(105, 105, 145, 0.064);
+  border-right: 3px solid blue;
+}
+.content {
+  border-right: 1px solid grey;
+  padding-right: 20px;
+}

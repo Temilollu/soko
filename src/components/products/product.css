@@ -1,0 +1,22 @@
+.products-container .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+.product .text{
+  width: 50%;
+}
+
+.product img {
+  width: 25%;
+  border-radius: 10%;
+}
+
+.product button {
+    width: auto;
+}
+.product h6{
+    margin: .5rem 0;
+}

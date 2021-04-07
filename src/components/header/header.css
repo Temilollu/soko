@@ -1,0 +1,35 @@
+.header-container {
+  /* padding: 0.6rem 8rem; */
+}
+
+.blue-header {
+  background-color: #2766cc;
+  margin: 0;
+  color: white;
+  padding: .9rem 8rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 8rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+    list-style: none;
+  
+
+}
+
+nav ul li img{
+    width: 20%;
+    vertical-align: middle;
+}
+
+.heading{
+    font-weight: bold;
+}

@@ -1,25 +1,27 @@
-import React from 'react'
-import "./product.css"
-
-const Products = ({products}) => {
-    console.log(products);
-    return (
-        <div className="products-container">
-        <h2>Electronics 12</h2>
-            {
-                products.map(product => (
-                    <div className="product">
-                        <img src={product.img} alt=""/>
-                        <div className="text">
-                            <h6>{product.name}</h6>
-                            <p>{product.price}</p>
-                        </div>
-                        <button onClick={() => console.log(product.name)}>Add +</button>
-                    </div>
-                ))
-            }
+import React from "react";
+import "./product.css";
+import { useHistory } from "react-router-dom";
+import { formatNumber } from "../../pages/Home/constants";
+const Products = ({ products }) => {
+  const history = useHistory();
+  // console.log(products);
+  return (
+    <div className="products-container">
+      {products.map((product) => (
+        <div className="product" key={product.id}>
+          <img src={product.img} alt="" />
+          <div className="text">
+            <h6>{product.name}</h6>
+            <p>UGX {formatNumber(product.price)}</p>
+          </div>
+          <button onClick={() => history.push(`/single-product/${product.id}`)}>
+            {" "}
+            + Add{" "}
+          </button>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-export default Products
+export default Products;

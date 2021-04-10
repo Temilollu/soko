@@ -13,7 +13,7 @@
 .sidebar > * {
   padding: 0.3rem;
   color: grey;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 }
 .sidebar .active {
@@ -23,4 +23,44 @@
 .content {
   border-right: 1px solid grey;
   padding-right: 20px;
+}
+.search {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: -0.7rem;
+}
+.search input {
+  width: 35%;
+  height: 100%;
+}
+.search button {
+  background-color: #f8de4b;
+  border: none;
+  height: 122%;
+}
+@media screen and (max-width: 960px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-top: none;
+  }
+  .sidebar {
+    border: none;
+  }
+  .content {
+    border: none;
+  }
+  .bag {
+    border: none;
+  }
+  .search input {
+    width: 90%;
+  }
+  .search {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

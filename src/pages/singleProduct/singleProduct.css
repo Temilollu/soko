@@ -1,0 +1,96 @@
+.single-prod-container {
+  /* padding: 0.9rem 8rem; */
+  margin-top: -1.5rem;
+}
+.single-prod-container .categ {
+  cursor: pointer;
+  padding: 0.9rem 8rem 0;
+}
+
+.product-container {
+  border-top: 1px solid grey;
+  margin: 1rem 0;
+}
+
+.single-prod {
+  display: flex;
+  padding: 1.5rem 8rem;
+}
+.single-prod-container .single-prod-img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.single-prod-container .text {
+  margin-left: 1rem;
+  width: 65%;
+}
+
+.single-prod-container .text h5 {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.single-prod-container .text p {
+  width: 90%;
+}
+.single-prod-container .text .price {
+  font-size: 1.5rem;
+}
+
+.single-prod-container .buttons {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.single-prod-container .buttons button {
+  padding: 0.6rem 0;
+  width: 48%;
+  border-radius: 5px;
+}
+
+.single-prod-container button:first-child {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+  font-weight: bold;
+}
+.single-prod-container button:last-child {
+  background: yellow;
+  color: blue;
+  font-weight: bold;
+  border-style: none;
+}
+.totals .final-total {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 960px) {
+  .single-prod-container .categ {
+    padding: 1rem;
+  }
+  .product-container{
+    border-top: none;
+    margin: 0;
+  }
+  .single-prod {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .single-prod-container .single-prod-img {
+    width: 100%;
+  }
+  .single-prod-container .text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .single-prod-container .text p{
+    width: 100%;
+    line-height: 25px;
+  }
+  .single-prod-container .buttons{
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

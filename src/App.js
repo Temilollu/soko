@@ -2,14 +2,16 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/Home/Home";
-import Checkout from "./pages/Checkout";
+import Bag from "./pages/bag/Bag";
+import SingleProduct from "./pages/singleProduct/SingleProduct";
 function App() {
   return (
     <Router>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/bag" component={Bag} />
+        <Route exact path="/single-product/:id" component={SingleProduct} />
       </Switch>
     </Router>
   );

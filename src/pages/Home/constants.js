@@ -1,32 +1,29 @@
 import Electronics from "../../components/Electronics/Electronics";
 import Masks from "../../components/masks/Masks";
-
+import MenAcessories from "../../components/Men acccessories/MenAcessories";
 
 export const sidebarItems = [
   {
     name: "Electronics",
-    available: 12,
+    available: 3,
   },
   {
     name: "Face masks",
-    available: 14,
+    available: 2,
   },
   {
-    name: "Nose Masks",
-    available: 5,
+    name: "Mens Accessories",
+    available: 3,
   },
-  {
-    name: "Barca jersey",
-    available: 4,
-  },
-  {
-    name: "Kids",
-    available: 4,
-  },
+
 ];
 
-
 export const Items = {
-    Electronics: <Electronics />,
-    "Face masks": <Masks />,
-  };
+  Electronics: <Electronics />,
+  "Face masks": <Masks />,
+  "Mens Accessories": <MenAcessories />,
+};
+
+export const formatNumber = (num) => {
+  return Intl.NumberFormat().format(num);
+};

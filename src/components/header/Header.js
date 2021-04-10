@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
 
-  console.log(cartItems);
   return (
     <header className="header-container">
       <p className="blue-header">Store made with soko</p>

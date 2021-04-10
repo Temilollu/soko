@@ -50,7 +50,7 @@ const Bag = () => {
               <span>Total</span>
               <span> UGX {formattedTotalPrice}</span>
             </div>
-            <div className="checkout-">
+            <div className="checkout-button">
               <button>Checkout</button>
             </div>
           </div>

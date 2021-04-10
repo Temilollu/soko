@@ -5,7 +5,7 @@ import Products from "../products/Products";
 
 const masksData = [
   {
-    name: "cream leather bag",
+    name: "cream leather Sneakers",
     img: fourth,
     price: 1110,
     id: 4,
@@ -21,7 +21,7 @@ const masksData = [
 const Masks = () => {
   return (
     <div>
-      <h2>Masks (2)</h2>
+      <h2>Sneakers (2)</h2>
       <Products products={masksData} />
     </div>
   );

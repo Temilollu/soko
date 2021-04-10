@@ -19,35 +19,35 @@ const allProducts = [
     img: first,
     price: 10,
     id: 1,
-    category: "Electronics",
+    category: "Bags",
   },
   {
     name: "black sneakers",
     img: second,
     price: 10000,
     id: 2,
-    category: "Electronics",
+    category: "Bags",
   },
   {
     name: "flashy bag",
     img: third,
     price: 400,
     id: 3,
-    category: "Electronics",
+    category: "Bags",
   },
   {
-    name: "cream leather bag",
+    name: "cream leather sneaker",
     img: fourth,
     price: 1110,
     id: 4,
-    category: "Face Masks",
+    category: "Sneakers",
   },
   {
     name: "cool sneakers",
     img: fifth,
     price: 1230,
     id: 5,
-    category: "Face Masks",
+    category: "Sneakers",
   },
   {
     name: "Brown leather watch",
@@ -78,6 +78,11 @@ const SingleProduct = ({ match }) => {
   const id = +match.params.id;
   const product = allProducts.find((product) => product.id === id);
 
+  const relatedProducts = allProducts.filter(
+    (prod) => prod.category === product.category && prod.id !== product.id
+  );
+
+ 
   const addProductHandler = () => {
     dispatch(addToCartAction(product));
     history.push("/bag");
@@ -108,6 +113,17 @@ const SingleProduct = ({ match }) => {
             </div>
           </div>
         </div>
+      </div>
+     <h5 id="related-title">Releated Products</h5>
+      <div className="related-products">
+        {relatedProducts.map((product) => (
+          <div className="related-prod-container" key={product.id}>
+            <img src={product.img} alt="" />
+            <p>{product.name}</p>
+            <p>{product.category}</p>
+            <p></p>
+          </div>
+        ))}
       </div>
     </div>
   );

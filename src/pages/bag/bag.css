@@ -6,106 +6,110 @@
 #bag-container .items {
   border-bottom: 1px solid grey;
 }
+.bag-overall-container .back{
+  padding: 0 8rem;
+  cursor: pointer;
+}
 
 #bag-container .items .product {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.5rem auto;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem auto;
+}
 
-  #bag-container .items .product .text {
-    width: 60%;
-  }
+#bag-container .items .product .text {
+  width: 60%;
+}
 
-  #bag-container .items .product img {
-    width: 9%;
-    border-radius: 10%;
-  }
+#bag-container .items .product img {
+  width: 9%;
+  border-radius: 10%;
+}
 
-#bag-container  .items .product button {
-    width: auto;
-    align-self: flex-end;
-    padding: 0.3rem 1.3rem;
-    background-color: white;
-    border: 1.5px solid blue;
-    color: blue;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 5px;
-  }
- #bag-container .items .product h6 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
- #bag-container .items .product p {
-    margin: 0.5rem 0;
-    color: grey;
-  }
- #bag-container .items .product .add_remove {
-    display: flex;
-    border: solid 1px #2766cc;
-  }
- #bag-container .items .product .add_remove .minus_button,
- #bag-container .items .product .add_remove .add_button {
-    opacity: 0.8;
+#bag-container .items .product button {
+  width: auto;
+  align-self: flex-end;
+  padding: 0.3rem 1.3rem;
+  background-color: white;
+  border: 1.5px solid blue;
+  color: blue;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+#bag-container .items .product h6 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#bag-container .items .product p {
+  margin: 0.5rem 0;
+  color: grey;
+}
+#bag-container .items .product .add_remove {
+  display: flex;
+  border: solid 1px #2766cc;
+}
+#bag-container .items .product .add_remove .minus_button,
+#bag-container .items .product .add_remove .add_button {
+  opacity: 0.8;
 
-    background-color: #2766cc1f;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    cursor: pointer;
-  }
- #bag-container .items .product .add_remove span {
-    width: 30px;
-    height: 20px;
-    text-align: center;
-    background-color: #fff;
+  background-color: #2766cc1f;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#bag-container .items .product .add_remove span {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+#bag-container .totals {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+#bag-container .totals > * {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+#bag-container .checkout-button button {
+  background: yellow;
+  color: blue;
+  font-weight: bold;
+  border-style: none;
+  padding: 0.6rem 0;
+  width: 100%;
+  border-radius: 5px;
+}
+@media (max-width: 960px) {
+  #bag-container {
+    padding: 0 1rem;
+    border-top: none;
   }
   #bag-container .totals {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    width: 100%;
+  }
+  #bag-container .totals > * {
+    width: 100%;
+  }
+  #bag-container .items .product {
+    /* flex-direction: column;
+      margin-top: 0; */
+  }
+  #bag-container .items .product img {
+    width: 14%;
+  }
+  #bag-container .items .product .text {
+    width: 50%;
     margin-top: 1rem;
   }
-
-  #bag-container .totals > * {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 0.5rem 0;
-  }
-  #bag-container .checkout-button button{
-    background: yellow;
-    color: blue;
-    font-weight: bold;
-    border-style: none;
-    padding: 0.6rem 0;
-    width: 100%;
-    border-radius: 5px;
-  }
-  @media (max-width: 960px) {
-    #bag-container {
-      padding: 0 1rem;
-      border-top: none;
-    }
-    #bag-container .totals {
-      width: 100%;
-    }
-    #bag-container .totals > * {
-      width: 100%;
-    }
-   #bag-container .items .product {
-      /* flex-direction: column;
-      margin-top: 0; */
-    }
-   #bag-container .items .product img {
-      width: 14%;
-    }
-   #bag-container .items .product .text {
-      width: 50%;
-      margin-top: 1rem;
-    }
-  }
+}

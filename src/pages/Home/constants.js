@@ -4,11 +4,11 @@ import MenAcessories from "../../components/Men acccessories/MenAcessories";
 
 export const sidebarItems = [
   {
-    name: "Electronics",
+    name: "Bags",
     available: 3,
   },
   {
-    name: "Face masks",
+    name: "Sneakers",
     available: 2,
   },
   {
@@ -19,8 +19,8 @@ export const sidebarItems = [
 ];
 
 export const Items = {
-  Electronics: <Electronics />,
-  "Face masks": <Masks />,
+  Bags: <Electronics />,
+  "Sneakers": <Masks />,
   "Mens Accessories": <MenAcessories />,
 };
 

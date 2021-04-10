@@ -66,6 +66,24 @@
   border-top: 1px solid #000;
   padding-top: 1rem;
 }
+.single-prod-container .related-products{
+  display: flex;
+  padding: 0 8rem;
+}
+#related-title{
+  text-transform: uppercase;
+  color: grey;
+  padding: 0 8rem;
+}
+.single-prod-container .related-products .related-prod-container{
+  margin-right: 1rem ;
+}
+.single-prod-container .related-products .related-prod-container img{
+  border-radius: 10px;
+}
+.single-prod-container .related-products .related-prod-container p{
+  text-transform: capitalize;
+}
 @media screen and (max-width: 960px) {
   .single-prod-container .categ {
     padding: 1rem;

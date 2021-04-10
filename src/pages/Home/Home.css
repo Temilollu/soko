@@ -29,17 +29,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 35px;
   margin-bottom: -0.7rem;
 }
 .search input {
-  width: 35%;
+  width: 32%;
   height: 100%;
+  background-color: #f0f0f0;
+  padding-left: 0.5rem;
+  border-style: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .search button {
   background-color: #f8de4b;
   border: none;
-  height: 122%;
+  height: 100%;
+  width: 3%;
 }
 
 @media screen and (max-width: 960px) {

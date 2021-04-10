@@ -4,7 +4,7 @@ import { sidebarItems, Items } from "./constants";
 import Cart from "../cart/Cart";
 
 const Home = () => {
-  const [currItem, setCurrItem] = useState("Electronics");
+  const [currItem, setCurrItem] = useState("Bags");
   const myRef = useRef(null);
 
   useEffect(() => {

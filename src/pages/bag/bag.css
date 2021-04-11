@@ -6,7 +6,7 @@
 #bag-container .items {
   border-bottom: 1px solid grey;
 }
-.bag-overall-container .back{
+.bag-overall-container .back {
   padding: 0 8rem;
   cursor: pointer;
 }
@@ -101,15 +101,15 @@
   #bag-container .totals > * {
     width: 100%;
   }
-  #bag-container .items .product {
-    /* flex-direction: column;
-      margin-top: 0; */
-  }
+
   #bag-container .items .product img {
     width: 14%;
   }
   #bag-container .items .product .text {
     width: 50%;
     margin-top: 1rem;
+  }
+  .bag-overall-container .back {
+    padding: 1rem;
   }
 }

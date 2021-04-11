@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Home.css";
-import { sidebarItems, Items } from "./constants";
+import { sidebarItems, Items } from "../../constants";
 import Cart from "../cart/Cart";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const [currItem, setCurrItem] = useState("Bags");
@@ -10,6 +11,11 @@ const Home = () => {
   useEffect(() => {
     myRef.current.scrollIntoView();
   }, [currItem]);
+
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="home">

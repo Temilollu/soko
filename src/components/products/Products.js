@@ -1,7 +1,7 @@
 import React from "react";
 import "./product.css";
 import { useHistory } from "react-router-dom";
-import { formatNumber } from "../../pages/Home/constants";
+import { formatNumber } from "../../constants";
 const Products = ({ products }) => {
   const history = useHistory();
   // console.log(products);

@@ -2,7 +2,7 @@ import React from "react";
 import "./bag.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCartAction, removeFromCartAction } from "../../redux/cart/action";
-import { formatNumber } from "../Home/constants";
+import { formatNumber } from "../../constants";
 import EmptyCartState from "../../components/emptyCartState/EmptyCartState";
 import { useHistory } from "react-router";
 const Bag = () => {
@@ -14,6 +14,9 @@ const Bag = () => {
     return (prevVal += currProduct.price * currProduct.quantity);
   }, 0);
   
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const formattedTotalPrice = formatNumber(totalPrice);
   return (
     <div className="bag-overall-container">

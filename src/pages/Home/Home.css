@@ -66,6 +66,11 @@
   .search input {
     width: 90%;
   }
+  .search button{
+    width: 10%;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+  }
   .search {
     width: 90%;
     margin: 0 auto;

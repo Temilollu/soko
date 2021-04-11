@@ -8,11 +8,7 @@ import SingleProduct from "./pages/singleProduct/SingleProduct";
 import Footer from "./components/footer/footer";
 
 function App() {
-  // const [path, setPath] = useState(window.location.pathname);
 
-  // React.useEffect(() => {
-  //   console.log("aassdas");
-  // }, []);
   return (
     <Router>
       <Header />

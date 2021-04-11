@@ -2,7 +2,7 @@ import React from "react";
 import "./cart.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCartAction, removeFromCartAction } from "../../redux/cart/action";
-import { formatNumber } from "../Home/constants";
+import { formatNumber } from "../../constants";
 import EmptyCartState from "../../components/emptyCartState/EmptyCartState";
 const Bag = () => {
   const { cartItems } = useSelector((state) => state.cart);

@@ -70,7 +70,7 @@ const Bag = () => {
               <span> UGX {formattedTotalPrice}</span>
             </div>
             <div className="checkout-button">
-                <button>Checkout</button>
+                <button onClick={() => history.push("/checkout")}>Checkout</button>
             </div>
           </div>
         </div>

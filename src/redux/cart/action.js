@@ -8,3 +8,7 @@ export const removeFromCartAction = (payload) => ({
   type: "REMOVE_FROM_CART",
   payload,
 });
+
+export const clearCart = () => ({
+  type : "CLEAR_CART"
+})

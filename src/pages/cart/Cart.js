@@ -4,10 +4,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCartAction, removeFromCartAction } from "../../redux/cart/action";
 import { formatNumber } from "../../constants";
 import EmptyCartState from "../../components/emptyCartState/EmptyCartState";
+import { useHistory } from "react-router";
 const Bag = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
+  const history =  useHistory()
   const totalPrice = cartItems.reduce((prevVal, currProduct) => {
     return (prevVal += currProduct.price * currProduct.quantity);
   }, 0);
@@ -51,7 +53,7 @@ const Bag = () => {
               <span> UGX {formattedTotalPrice}</span>
             </div>
             <div className="checkout-button">
-              <button>Checkout</button>
+              <button onClick={() => history.push("/checkout")}>Checkout</button>
             </div>
           </div>
         </div>

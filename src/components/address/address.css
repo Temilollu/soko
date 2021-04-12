@@ -1,0 +1,13 @@
+.address textarea {
+  height: 60px;
+  margin-top: 0.5rem;
+}
+
+.address .change_address {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  margin-left: 1rem;
+}

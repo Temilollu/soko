@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Bag from "./pages/bag/Bag";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
 import Footer from "./components/footer/footer";
+import Checkout from "./pages/checkout/Checkout";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/bag" component={Bag} />
+        <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/single-product/:id" component={SingleProduct} />
       </Switch>
       <Footer />

@@ -1,0 +1,114 @@
+.wrapper {
+  padding: 1rem 8rem;
+  width: 60%;
+}
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+}
+.StepProgress .label {
+  margin: 1rem 0;
+}
+.pay {
+  padding-left: 4.5rem;
+}
+.pay .order {
+  display: block;
+  background: yellow;
+  color: blue;
+  font-weight: bold;
+  border-style: none;
+  padding: 0.6rem 0;
+  width: 30%;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.StepProgress input {
+  height: 25px;
+  width: 50%;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.StepProgress .login {
+  height: 32px;
+  background: yellow;
+  color: blue;
+  font-weight: bold;
+  border-style: none;
+  width: 80px;
+  border-radius: 5px;
+}
+.StepProgress::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 23px;
+  width: 10px;
+  height: 100%;
+  border-left: 2px solid #ccc;
+}
+.StepProgress-item {
+  position: relative;
+  counter-increment: list;
+  padding-left: 2rem;
+}
+.StepProgress-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+.last-step::before {
+  display: none !important;
+}
+.StepProgress-item::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -23px;
+  height: 100%;
+  width: 10px;
+}
+.StepProgress-item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -37px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.StepProgress-item.is-done::before {
+  border-left: 2px solid blue;
+}
+.StepProgress-item.is-done::after {
+  content: "✔";
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid blue;
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+}
+.StepProgress-item.current::before {
+  border-left: 2px solid blue;
+}
+.StepProgress-item.current::after {
+  content: counter(list);
+  padding-top: 1px;
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  left: -37px;
+  font-size: 14px;
+  text-align: center;
+  color: blue;
+  border: 2px solid blue;
+  background-color: white;
+}
+.StepProgress strong {
+  display: block;
+}

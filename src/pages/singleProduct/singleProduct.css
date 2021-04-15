@@ -77,6 +77,7 @@
 }
 .single-prod-container .related-products .related-prod-container {
   margin-right: 1rem;
+  cursor : pointer;
 }
 .single-prod-container .related-products .related-prod-container img {
   border-radius: 10px;

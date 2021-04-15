@@ -9,6 +9,10 @@ const Checkout = () => {
   const [appendAddress, setAppendAddress] = useState(false);
   const dispatch = useDispatch();
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="overall-checkout-container">
       <div className="wrapper">
@@ -79,7 +83,10 @@ const Checkout = () => {
         </div>
       </div>
       <div className="cart-checkout">
-        <p style={{ textAlign: "right", cursor: "pointer" }} onClick={() => dispatch(clearCart())}>
+        <p
+          style={{ textAlign: "right", cursor: "pointer" }}
+          onClick={() => dispatch(clearCart())}
+        >
           Clear cart
         </p>
         <Cart />

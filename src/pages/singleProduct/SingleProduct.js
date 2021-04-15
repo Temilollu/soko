@@ -5,13 +5,11 @@ import { addToCartAction } from "../../redux/cart/action";
 import { useDispatch } from "react-redux";
 import { formatNumber, allProducts } from "../../constants";
 
-
 const SingleProduct = ({ match }) => {
   const history = useHistory();
   const dispatch = useDispatch();
   const id = +match.params.id;
   const product = allProducts.find((product) => product.id === id);
-
 
   const relatedProducts = allProducts.filter(
     (prod) => prod.category === product.category && prod.id !== product.id
@@ -24,7 +22,7 @@ const SingleProduct = ({ match }) => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   return (
     <div className="single-prod-container">
@@ -55,7 +53,11 @@ const SingleProduct = ({ match }) => {
       <h5 id="related-title">Releated Products</h5>
       <div className="related-products">
         {relatedProducts.map((product) => (
-          <div className="related-prod-container" key={product.id}>
+          <div
+            className="related-prod-container"
+            key={product.id}
+            onClick={() => history.push(`/single-product/${product.id}`)}
+          >
             <img src={product.img} alt="" />
             <p>{product.name}</p>
             <p>{product.category}</p>
